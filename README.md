@@ -24,9 +24,14 @@ You can use any tool(s) or AI you want to complete this assignment.
 4. Simulate a checkout attempt with missing data and log validation results
 5. Save product data to a `.csv` file
 6. Log all major steps and actions taken
-7. Extra credit:  Make the automation lookup one specific product (your choice) on the website.  Use a pydantic model that validates the input to ensure only valid input is given the automation and add validation to given clear errors if input is invalid.  Make the input be a json file that is validated by the pydantic model before running the automation.
-8. Extra Extra credit:  split the automation into distinct tasks and implement these using Prefect and show them in the Prefect UI. https://github.com/PrefectHQ/prefect.  
-
+7. Extra Credit - Redo the same assignment without Playwright — use PyAutoGUI to control the browser purely by screen position/image matching.
+   Requirements:
+   - Full flow: invalid login, valid login, extract product names/prices, checkout with missing data.
+   - Locate UI via screenshots (image templates) + optional OCR for text capture.
+   - Include waits/retries and error handling.
+   - Save CSV for products, log each major step, and take screenshots.
+   - Script should run start-to-finish with no manual clicks.
+   
 ---
 
 ## ✅ Requirements
